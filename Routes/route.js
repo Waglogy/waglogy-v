@@ -1,24 +1,32 @@
 const express = require("express")
 const route = express.Router()
-const Contact = require("../Model/Schema")
+const IndexController = require("../controllers/IndexController")
+const contactController = require("../controllers/contactController")
+const educationController = require("../controllers/educationController")
+const partnerController = require("../controllers/partnerController")
+const internshipController = require("../controllers/internshipController")
 
-route.get("/", (req, res) => {
-  res.render("index")
-})
+// For Index (Home Page)
 
-route.post("/contact", async (req, res) => {
-  try {
-    const { name, email, subject, message } = req.body
-    if (!name || !email || !subject || !message)
-      return res.status(401).json({ message: "Fill All The Fields" })
-    const contactData = new Contact({ name, email, subject, message })
-    await contactData.save()
-    res.redirect("/thankyou")
-  } catch (error) {
-    console.error(error)
-    res.status(500).json({ message: error.message })
-  }
-})
+route.get("/", IndexController)
+
+// For Contact Page
+
+route.post("/contact", contactController)
+
+// For Partners Page
+
+route.get("/partner", partnerController)
+
+// For Internship Page
+
+route.get("/internship", internshipController)
+
+// For Education Page
+
+route.get("/education", educationController)
+
+// For Thank You Page
 
 route.get("/thankyou", (req, res) => {
   res.render("successful")

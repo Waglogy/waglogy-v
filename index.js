@@ -15,6 +15,14 @@ app.set("views", "./views")
 app.use(require("./Routes/route"))
 DB_link = process.env.MONGO
 port = process.env.PORT || 3000
+
+// For Removal of MongoDB Deprication Warning
+mongoose.set({
+  strictQuery: true,
+})
+
+// DataBase Connection
+
 mongoose
   .connect(process.env.DB_LINK)
   .then(() => {

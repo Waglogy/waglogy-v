@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/index.js",
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js "
   },
-  "author": "Reesav Gupta",
+  "author": "Waglogy",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

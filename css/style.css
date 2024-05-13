@@ -269,8 +269,8 @@
     border-radius: 3px;
     color: #111111;
   }
+ 
 }
-
 .active {
   scroll-snap-type: unset;
 }

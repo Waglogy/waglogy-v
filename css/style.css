@@ -5,6 +5,9 @@
   --light: #effdf5;
   --dark: #0e2e50;
 }
+.cole{
+  background-color: #0e2e50;
+}
 /* .shad_w{
   transform:
     perspective(75em)

@@ -136,7 +136,59 @@
 .card_content::-webkit-scrollbar {
   width: 8px;
 }
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 
+.hiring-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.hiring-content {
+  width: 60%;
+  animation: fadeIn 1s ease-out;
+}
+
+.hiring-header {
+  font-size: 24px;
+  color: #000;
+  animation: fadeIn 1s ease-out;
+}
+
+.hiring-details p,
+.hiring-details ul {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.apply-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.hiring-right {
+  width: 35%;
+}
 .card_content::-webkit-scrollbar-track {
   box-shadow: 0;
   border-radius: 0;

@@ -719,3 +719,34 @@ hr {
     padding-right: 0;
     border-right: none;
 }
+
+@media (max-width: 600px) {
+  .hiring-container {
+      padding: 10px;
+  }
+
+  .hiring-header {
+      font-size: 20px;
+  }
+
+  .hiring-details h3, .hiring-details h4 {
+      font-size: 18px;
+  }
+
+  .hiring-details p, .hiring-details ul {
+      font-size: 16px;
+  }
+
+  .hiring-details ul {
+      margin-left: 15px;
+  }
+
+  .visme_d {
+      width: 100% !important;
+      height: auto !important;
+  }
+
+  .hiring-right {
+      margin-top: 20px;
+  }
+}

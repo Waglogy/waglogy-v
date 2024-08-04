@@ -99,6 +99,20 @@ enrollmentForm.addEventListener("submit", async (ev) => {
             })
 
             enrollmentForm.reset()
+            nameInput.style =
+                "padding: 8px; border-radius: 5px; border: 1px solid #ccc;"
+            nameInput.placeholder = ""
+            nameInput.classList.remove("red-placeholder")
+
+            phoneInput.style =
+                "padding: 8px; border-radius: 5px; border: 1px solid #ccc;"
+            phoneInput.placeholder = ""
+            phoneInput.classList.remove("red-placeholder")
+
+            emailInput.style =
+                "padding: 8px; border-radius: 5px; border: 1px solid #ccc;"
+            emailInput.placeholder = ""
+            emailInput.classList.remove("red-placeholder")
         }
     } catch (error) {
         console.log(error)
@@ -112,20 +126,6 @@ enrollmentForm.addEventListener("submit", async (ev) => {
     } finally {
         submitBtn.disabled = false
         submitBtn.innerText = "Submit"
-        /* nameInput.style =
-            "padding: 8px; border-radius: 5px; border: 1px solid #ccc;"
-        nameInput.placeholder = ""
-        nameInput.classList.remove("red-placeholder")
-
-        phoneInput.style =
-            "padding: 8px; border-radius: 5px; border: 1px solid #ccc;"
-        phoneInput.placeholder = ""
-        phoneInput.classList.remove("red-placeholder")
-
-        emailInput.style =
-            "padding: 8px; border-radius: 5px; border: 1px solid #ccc;"
-        emailInput.placeholder = ""
-        emailInput.classList.remove("red-placeholder") */
     }
 })
 

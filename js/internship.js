@@ -80,8 +80,6 @@ enrollmentForm.addEventListener("submit", async (ev) => {
 
             const resData = await response.json()
 
-            console.log(resData)
-
             if (!resData.success) {
                 return Swal.fire({
                     icon: "warning",
@@ -115,8 +113,6 @@ enrollmentForm.addEventListener("submit", async (ev) => {
             emailInput.classList.remove("red-placeholder")
         }
     } catch (error) {
-        console.log(error)
-
         Swal.fire({
             icon: "error",
             title: "Oops...",

@@ -112,7 +112,7 @@ enrollmentForm.addEventListener("submit", async (ev) => {
     } finally {
         submitBtn.disabled = false
         submitBtn.innerText = "Submit"
-        nameInput.style =
+        /* nameInput.style =
             "padding: 8px; border-radius: 5px; border: 1px solid #ccc;"
         nameInput.placeholder = ""
         nameInput.classList.remove("red-placeholder")
@@ -125,7 +125,7 @@ enrollmentForm.addEventListener("submit", async (ev) => {
         emailInput.style =
             "padding: 8px; border-radius: 5px; border: 1px solid #ccc;"
         emailInput.placeholder = ""
-        emailInput.classList.remove("red-placeholder")
+        emailInput.classList.remove("red-placeholder") */
     }
 })
 

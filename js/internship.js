@@ -126,7 +126,7 @@ enrollmentForm.addEventListener("submit", async (ev) => {
 })
 
 function countdownTimer() {
-    const endDate = new Date("August 10, 2024 00:00:00").getTime()
+    const endDate = new Date("August 16, 2024 00:00:00").getTime()
     const now = new Date().getTime()
     const timeLeft = endDate - now
 

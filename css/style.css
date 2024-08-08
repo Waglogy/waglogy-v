@@ -16,6 +16,25 @@
     color: red;
 }
 
+button:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+@keyframes animate-text {
+    from {
+        color: blue;
+    }
+    to {
+        color: red;
+    }
+}
+
+#mini-heading{
+    animation: animate-text .5s linear infinite alternate;
+}
+
 /* .shad_w{
   transform:
     perspective(75em)
@@ -721,32 +740,34 @@ hr {
 }
 
 @media (max-width: 600px) {
-  .hiring-container {
-      padding: 10px;
-  }
+    .hiring-container {
+        padding: 10px;
+    }
 
-  .hiring-header {
-      font-size: 20px;
-  }
+    .hiring-header {
+        font-size: 20px;
+    }
 
-  .hiring-details h3, .hiring-details h4 {
-      font-size: 18px;
-  }
+    .hiring-details h3,
+    .hiring-details h4 {
+        font-size: 18px;
+    }
 
-  .hiring-details p, .hiring-details ul {
-      font-size: 16px;
-  }
+    .hiring-details p,
+    .hiring-details ul {
+        font-size: 16px;
+    }
 
-  .hiring-details ul {
-      margin-left: 15px;
-  }
+    .hiring-details ul {
+        margin-left: 15px;
+    }
 
-  .visme_d {
-      width: 100% !important;
-      height: auto !important;
-  }
+    .visme_d {
+        width: 100% !important;
+        height: auto !important;
+    }
 
-  .hiring-right {
-      margin-top: 20px;
-  }
+    .hiring-right {
+        margin-top: 20px;
+    }
 }

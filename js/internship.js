@@ -74,7 +74,7 @@ enrollmentForm.addEventListener("submit", async (ev) => {
             Swal.fire({
                 icon: "warning",
                 title: "Oops...",
-                text: "Please select your college.",
+                text: "Please select your Institute.",
                 allowOutsideClick: false,
             })
         }

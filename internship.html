@@ -339,7 +339,7 @@
                     style="flex: 1; min-width: 300px"
                 >
                     <h2 style="text-align: center; color: #007bff">
-                        Internship Registration
+                        Course Registration
                     </h2>
                     <p style="text-align: center; color: red" id="info-text">
                         Registration Closes On
@@ -386,8 +386,8 @@
                             "
                         />
 
-                        <label for="college">College (if applicable):</label>
-                        <input
+                        <label for="college">College:</label>
+                        <!-- <input
                             type="text"
                             id="college"
                             name="college"
@@ -396,7 +396,25 @@
                                 border-radius: 5px;
                                 border: 1px solid #ccc;
                             "
-                        />
+                        /> -->
+
+                        <select
+                            name="college"
+                            id=""
+                            style="
+                                padding: 8px;
+                                border-radius: 5px;
+                                border: 1px solid #ccc;
+                            "
+                        >
+                            <option value="">Select College</option>
+                            <option value="C.C.C.T">
+                                Centre For Computers & Technology
+                            </option>
+                            <option value="S.I.S.T" disabled>
+                                Sikkim Institute of Science & Technology
+                            </option>
+                        </select>
 
                         <label for="courses">Select Course(s):</label>
                         <div

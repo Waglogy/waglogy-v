@@ -69,6 +69,16 @@ enrollmentForm.addEventListener("submit", async (ev) => {
             })
         }
 
+        if (data.college === "") {
+            isValid = false
+            Swal.fire({
+                icon: "warning",
+                title: "Oops...",
+                text: "Please select your college.",
+                allowOutsideClick: false,
+            })
+        }
+
         if (isValid) {
             const response = await fetch("https://api.waglogy.in/api/enroll", {
                 method: "POST",

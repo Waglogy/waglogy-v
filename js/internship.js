@@ -29,7 +29,7 @@ enrollmentForm.addEventListener("submit", async (ev) => {
             name: formData.get("name"),
             email: formData.get("email"),
             phone: formData.get("phone"),
-            courses: formData.getAll("courses"),
+            courses: formData.get("courses"),
             college: formData.get("college"),
         }
 
@@ -136,7 +136,7 @@ enrollmentForm.addEventListener("submit", async (ev) => {
 })
 
 function countdownTimer() {
-    const endDate = new Date("August 16, 2024 00:00:00").getTime()
+    const endDate = new Date("August 31, 2024 00:00:00").getTime()
     const now = new Date().getTime()
     const timeLeft = endDate - now
 
